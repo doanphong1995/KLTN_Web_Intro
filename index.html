@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Website Bussniess</title>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Your Styles
+    ================================================== -->
+  <link href="../app/assets/css/style.css" rel="stylesheet" media="screen">
+
+  <link rel="stylesheet" href="../app/assets/js/twitter/jtwt.css" />
+
+  <link rel="stylesheet" href="../app/assets/css/font-awesome.min.css" />
+
+  <!-- Favicons
+    ================================================== -->
+  <link rel="shortcut icon" href="../app/assets/img/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="../app/assets/img/icons/apple-touch-icon.html">
+  <link rel="apple-touch-icon" sizes="72x72" href="../app/assets/img/icons/apple-touch-icon-72x72.html">
+  <link rel="apple-touch-icon" sizes="114x114" href="../app/assets/img/icons/apple-touch-icon-114x114.html">
+
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <script src="systemjs.config.js"></script>
+
+  <!-- ======================= JQuery libs =========================== -->
+  <!-- Always latest version of jQuery-->
+  <script src="../app/assets/js/jquery-1.7.1.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>-->
+  <!-- Bootstrap.js-->
+  <script src="../app/assets/js/bootstrap.js"></script>
+  <!--fUNCTIONS-->
+  <script type="text/javascript" src="../app/assets/js/jquery-func.js"></script>
+  <script type="text/javascript" src="../app/assets/js/filter/quiksand.js"></script>
+  <!-- ======================= End JQuery libs =========================== -->
+
+
+  <script>
+    System.import('app').catch(function (err) { console.error(err); });
+  </script>
+</head>
+
+<body>
+  <my-app>Loading AppComponent content here ...</my-app>
+</body>
+
+</html>
