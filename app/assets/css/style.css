@@ -1565,12 +1565,6 @@ a .icon-menu {
 /****************end photos*********************/
 
 /*********************lightbox******************************/
-.content_modal{
-    width: auto;
-    height: 100%;
-    background: #9d9d9d;
-    padding: 0;
-}
 .modal{
     width: auto;
 
@@ -1606,11 +1600,9 @@ button.close i {
     border-top: 3px solid white;
 
 }
-.modal-body img{
-    height: 100%;
-}
+
 .modal-footer{
-    background: #2f2f2f;
+    background: #4CAF50;
     border-radius: 0 4 0 0;
     border-top: 0;
     box-shadow: 0 0 0;
@@ -1645,7 +1637,7 @@ footer .content_footer hr{
     float: left;
 }
 .modal-footer{
-    background: #2f2f2f;
+    background: #4CAF50;
     border-radius: 0 4 0 0;
     border-top: 0;
     box-shadow: 0 0 0;
