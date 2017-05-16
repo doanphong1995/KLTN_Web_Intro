@@ -606,6 +606,10 @@ i.icon-cancel-circle {
 		margin-left:0%;
 
 	}
+	.box.span2.offset0.color_one.resume
+	{
+		width: 40%;
+	}
 	li.box.span2.offset0.color_one.resume{
 		width:40%;
 	}
@@ -650,7 +654,7 @@ i.icon-cancel-circle {
 		top: 55%;
     }
     .row-fluid .box{
-        width: 40%;
+        width: 20%;
     }
     .row-fluid p{
         line-height: 18px;
