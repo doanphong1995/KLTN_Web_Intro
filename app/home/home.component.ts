@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var $:any;
+declare var $: any;
 
 @Component({
   selector: 'homeComponent',
@@ -7,7 +7,11 @@ declare var $:any;
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
-   ngOnInit(){
-        
-    }
+  ngOnInit() {
+
+  }
+
+  goFB() {
+    window.location.href = 'https://www.facebook.com/doanphong19951';
+  }
 }

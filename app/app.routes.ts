@@ -9,11 +9,13 @@ import { PartnerComponent } from '../app/home2/partner/partner.component';
 import { FanpageComponent } from '../app/home2/fanpage/fanpage.component';
 import { FlMeaningComponent } from '../app/home2/flmeaning/flmeaning.component';
 import { ProductDetailsComponent } from '../app/home2/productdetails/productdetails.component';
+import { BlogIDComponent } from '../app/home2/blogid/blogid.component';
 
 const MODULE_ROUTES: Route[] = [
     { path: 'home', component: HomeComponent },
     { path: 'introduce', component: IntroduceComponent },
     { path: 'blog', component: BlogComponent },
+    { path: 'blogid', component: BlogIDComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'product', component: ProductComponent },
     { path: 'flmeaning', component: ExperienceComponent },

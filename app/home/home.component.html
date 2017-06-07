@@ -8,36 +8,36 @@
 
                         <div class="left_content left_content_active">
                             <ul class="info row-fluid field1 info_active">
-                                <li class="box span2 offset0 color_one resume">
-                                    <a [routerLink]="['']">
+                                <li class="box span2 offset0 color_one resume" [routerLink]="['']" style="cursor:pointer">
+                                    <a>
                                         <span class="sprite sprite-twitter-png"></span>
                                     </a>
                                 </li>
 
-                                <li class="box span1 color_tree profile offset0">
-                                    <a [routerLink]="['/introduce']" class="link_profile">
+                                <li class="box span1 color_tree profile offset0" [routerLink]="['/introduce']" style="cursor:pointer">
+                                    <a  class="link_profile">
                                         <span class="sprite sprite-profile-png"></span>
                                         <p class="metro_text">Introduce</p>
                                     </a>
                                 </li>
                             </ul>
                             <ul class="info row-fluid field2 info_active">
-                                <li class="box span1 offset0 color_two experience ">
-                                    <a [routerLink]="['/fanpage']">
+                                <li class="box span1 offset0 color_two experience " (click)="goFB()"style="cursor:pointer">
+                                    <a >
                                         <span class="sprite sprite-facebook-png"></span>
                                         <p class="metro_text">Fanpage</p>
                                     </a>
 
                                 </li>
-                                <li class="box span1 color_four education offset0">
-                                    <a [routerLink]="['/partner']">
+                                <li class="box span1 color_four education offset0" [routerLink]="['/partner']" style="cursor:pointer">
+                                    <a >
                                     <span class="sprite sprite-education-png"></span>
                                     <p class="metro_text">partner</p>
                                 </a>
 
                                 </li>
-                                <li class="box span1 color_one blog offset0">
-                                    <a [routerLink]="['/blog']">
+                                <li class="box span1 color_one blog offset0" [routerLink]="['/blog']" style="cursor:pointer">
+                                    <a >
                                     <span class="sprite sprite-blog-png"></span>
                                     <p class="metro_text">blog</p>
                                 </a>
@@ -46,23 +46,23 @@
 
                             </ul>
                             <ul class="info row-fluid field3 info_active">
-                                <li class="box span1 offset0 color_seven social">
-                                    <a [routerLink]="['/flmeaning']">
+                                <li class="box span1 offset0 color_seven social" [routerLink]="['/flmeaning']" style="cursor:pointer">
+                                    <a >
                                         <span class="sprite sprite-loader2-png"></span>
                                         <p class="metro_text">Flower Meaning</p>
                                     </a>
 
                                 </li>
 
-                                <li class="box span1 color_six contact offset0">
-                                    <a [routerLink]="['/contact']">
+                                <li class="box span1 color_six contact offset0" [routerLink]="['/contact']" style="cursor:pointer">
+                                    <a >
                                         <span class="sprite sprite-contact-png"></span>
                                         <p class="metro_text">contact</p>
                                     </a>
 
                                 </li>
-                                <li class="box span1 color_five portfolio offset0">
-                                    <a [routerLink]="['/product']">
+                                <li class="box span1 color_five portfolio offset0" [routerLink]="['/product']" style="cursor:pointer">
+                                    <a >
                                     <span class="sprite sprite-portfolio-png"></span>
                                     <p class="metro_text">Product</p>
                                 </a>

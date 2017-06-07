@@ -6,22 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var HomeComponent = (function () {
-    function HomeComponent() {
+var BlogIDComponent = (function () {
+    function BlogIDComponent() {
     }
-    HomeComponent.prototype.ngOnInit = function () {
+    BlogIDComponent.prototype.ngOnInit = function () {
     };
-    HomeComponent.prototype.goFB = function () {
-        window.location.href = 'https://www.facebook.com/doanphong19951';
-    };
-    return HomeComponent;
+    return BlogIDComponent;
 }());
-HomeComponent = __decorate([
+BlogIDComponent = __decorate([
     core_1.Component({
-        selector: 'homeComponent',
+        selector: 'blogidComponent',
         moduleId: module.id,
-        templateUrl: './home.component.html',
+        templateUrl: './blogid.component.html',
     })
-], HomeComponent);
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+], BlogIDComponent);
+exports.BlogIDComponent = BlogIDComponent;
+//# sourceMappingURL=blogid.component.js.map

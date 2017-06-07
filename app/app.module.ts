@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from '../app/home/home.component';
 import { IntroduceComponent } from '../app/home2/introduce/introduce.component';
 import { BlogComponent } from '../app/home2/blog/blog.component';
+import { BlogIDComponent } from '../app/home2/blogid/blogid.component';
 import { ContactComponent } from '../app/home2/contact/contact.component';
 import { ProductComponent } from '../app/home2/product/product.component';
 import { ExperienceComponent } from '../app/home2/experience/experience.component';
@@ -21,7 +22,7 @@ import { FooterComponent } from '../app/home2/footer/footer.component';
   declarations: [AppComponent, HomeComponent, IntroduceComponent,
     HeaderComponent, FooterComponent, BlogComponent, ContactComponent,
     ProductComponent, ExperienceComponent, PartnerComponent, FanpageComponent,
-    FlMeaningComponent, ProductDetailsComponent],
+    FlMeaningComponent, ProductDetailsComponent, BlogIDComponent],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap:    [AppComponent]
 })

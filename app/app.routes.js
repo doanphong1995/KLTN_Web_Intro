@@ -10,10 +10,12 @@ var partner_component_1 = require("../app/home2/partner/partner.component");
 var fanpage_component_1 = require("../app/home2/fanpage/fanpage.component");
 var flmeaning_component_1 = require("../app/home2/flmeaning/flmeaning.component");
 var productdetails_component_1 = require("../app/home2/productdetails/productdetails.component");
+var blogid_component_1 = require("../app/home2/blogid/blogid.component");
 var MODULE_ROUTES = [
     { path: 'home', component: home_component_1.HomeComponent },
     { path: 'introduce', component: introduce_component_1.IntroduceComponent },
     { path: 'blog', component: blog_component_1.BlogComponent },
+    { path: 'blogid', component: blogid_component_1.BlogIDComponent },
     { path: 'contact', component: contact_component_1.ContactComponent },
     { path: 'product', component: product_component_1.ProductComponent },
     { path: 'flmeaning', component: experience_component_1.ExperienceComponent },

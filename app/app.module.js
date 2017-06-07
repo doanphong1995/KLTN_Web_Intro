@@ -13,6 +13,7 @@ var app_component_1 = require("./app.component");
 var home_component_1 = require("../app/home/home.component");
 var introduce_component_1 = require("../app/home2/introduce/introduce.component");
 var blog_component_1 = require("../app/home2/blog/blog.component");
+var blogid_component_1 = require("../app/home2/blogid/blogid.component");
 var contact_component_1 = require("../app/home2/contact/contact.component");
 var product_component_1 = require("../app/home2/product/product.component");
 var experience_component_1 = require("../app/home2/experience/experience.component");
@@ -33,7 +34,7 @@ AppModule = __decorate([
         declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, introduce_component_1.IntroduceComponent,
             header_component_1.HeaderComponent, footer_component_1.FooterComponent, blog_component_1.BlogComponent, contact_component_1.ContactComponent,
             product_component_1.ProductComponent, experience_component_1.ExperienceComponent, partner_component_1.PartnerComponent, fanpage_component_1.FanpageComponent,
-            flmeaning_component_1.FlMeaningComponent, productdetails_component_1.ProductDetailsComponent],
+            flmeaning_component_1.FlMeaningComponent, productdetails_component_1.ProductDetailsComponent, blogid_component_1.BlogIDComponent],
         providers: [{ provide: common_1.APP_BASE_HREF, useValue: '/' }],
         bootstrap: [app_component_1.AppComponent]
     })

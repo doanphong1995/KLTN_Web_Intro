@@ -30,7 +30,7 @@
 }
 button.pmm_button{
     background-color: #4CAF50;
-	width: 46%;
+	width: 60%;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -40,7 +40,7 @@ button.pmm_button{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    margin-left: 52%;
+    margin-left: 40%;
     margin-top: 10px;
 }
 .modal-footer {

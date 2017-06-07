@@ -110,7 +110,7 @@ img{	width: 100%;}
 	color: #fff;
 }
 .content_menu .resume_button:hover, .content_menu .contact_button:hover, li.box .resume_button:hover, li.box .contact_button:hover, li.box img:hover   {
-	opacity:0.5;
+	opacity:1;
 }
 .content_menu .box h1{
     margin-bottom: 2px;
@@ -153,7 +153,8 @@ img{	width: 100%;}
 .navbar .nav .menu_item a{
     text-shadow: 0 0 0;
     text-transform: uppercase;
-    color: White;
+    color: white;
+    font-weight: 600;
 	font-style:bold;
 
 }
@@ -353,8 +354,9 @@ h2.sub_title span.little_title {
     overflow: hidden;
 }
 .home .box:hover{
-    background-color:#FF4EC7;
+    opacity: 1;
 }
+
 .home .box:hover .sprite{
     text-shadow: 0px 0px 20px #ccc;
     color: transparent;
@@ -370,8 +372,7 @@ h2.sub_title span.little_title {
 }
 .home .box:hover .resume_button, .home .box:hover .contact_button {
     background-color: transparent!important;
-    background-image: none;
-    color: #fff;
+    opacity: 1;
     -webkit-animation: moveFromTop 300ms ease;
     -moz-animation: moveFromTop 300ms ease;
     -ms-animation: moveFromTop 300ms ease;
@@ -488,6 +489,27 @@ ul.social-circled li:hover a {
     display: block;
 
 }
+
+.portfolio_box:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolio_box .img_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
 .portfolio_box img:hover{
     opacity: 0.5;
     color: #4582ad;
@@ -1223,6 +1245,7 @@ a .icon-menu {
 .single_post .content_center .content_post .text_post{
     line-height: 30px;
     padding-top: 30px;
+	text-align: justify;
 
 }
 .single_post .content_center .content_post .content_person_post{
@@ -1482,37 +1505,6 @@ a .icon-menu {
 }
 
 /***********************************************/
-/********************colors**********************/
-.color_one{
-    background: #00796B;
-}
-.color_two{
-    background: #1976D2;
-}
-.color_tree{
-    background: #4CAF50;
-}
-.color_four{
-    background: #FFA000;
-}
-.color_five{
-    background: #CDDC39;
-}
-.color_six{
-    background: #7B1FA2;
-}
-.color_seven{
-    background: #FF5252;
-}
-.color_eight{
-    background: #00baff;
-}
-.color_nine{
-    background: #cb2027;
-}
-.color_ten{
-    background: #ffffff;
-}
 
 /************************buttons**************************/
 .btn-sample {
@@ -1651,3 +1643,161 @@ footer .content_footer hr{
     text-align: center;
 
 }
+
+div#myCarousel h1 {
+    text-align: center;
+    /* margin-top: 8%; */
+}
+
+.pmm_productBox img {
+    margin-top: -30%;
+}
+
+pmm_button{
+	background-color: #4CAF50;
+    width: 60%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.product_details {
+    margin-left: 40%;
+    margin-top: 10%;
+	border-style: groove;
+}
+
+li.box.span2.offset0.color_one.resume {
+    border-width: 2px 0px 2px 2px;
+    border-style: solid;
+    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-468-234.jpg");
+    opacity: 0.6;
+}
+
+li.box.span2.offset0.color_one.resume:hover{
+    opacity: 1;
+}
+
+li.box.span1.color_tree.profile.offset0 {
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-1.jpg");   
+    opacity: 0.6; 
+}
+
+li.box.span1.color_tree.profile.offset0:hover {
+    opacity: 1;
+}
+
+li.box.span1.offset0.color_two.experience{
+    border-width: 0px 0px 0px 2px;
+    border-style: solid;
+    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-2.jpg");  
+    opacity: 0.6;      
+}
+
+li.box.span1.offset0.color_two.experience:hover{
+    opacity: 1;
+}
+
+li.box.span1.offset0.color_seven.social{
+    border-width: 2px 0px 2px 2px;
+    border-style: solid;
+    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-5.jpg");   
+    opacity: 0.6;         
+}
+
+li.box.span1.offset0.color_seven.social:hover{
+    opacity: 1;
+}
+
+li.box.span1.color_four.education.offset0{
+    border-width: 0px 0px 0px 2px;
+    border-style: solid;
+    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-3.jpg"); 
+    opacity: 0.6;           
+}
+
+li.box.span1.color_four.education.offset0:hover{
+    opacity: 1;
+}
+
+li.box.span1.color_one.blog.offset0{
+    border-width: 0px 2px 0px 2px;
+    border-style: solid;
+    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-4.jpg"); 
+    opacity: 0.6;           
+}
+
+li.box.span1.color_one.blog.offset0:hover{
+    opacity: 1;
+}
+
+li.box.span1.color_six.contact.offset0{
+    border-width: 2px 0px 2px 2px;
+    border-style: solid;
+    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-6.jpg");   
+    opacity: 0.6;         
+}
+
+li.box.span1.color_six.contact.offset0:hover{
+    opacity: 1;
+}
+
+li.box.span1.color_five.portfolio.offset0{
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-7.jpg");  
+    opacity: 0.6;          
+}
+
+li.box.span1.color_five.portfolio.offset0:hover{
+    opacity: 1;
+}
+
+.box.span2.offset0.color_one.resume{
+    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-7-468-234.jpg");
+    border-width: 0px 2px 0px 0px;
+    border-style: solid;
+    opacity: 0.6;
+}
+
+.box.span2.offset0.color_one.resume:hover{
+    opacity: 1;
+}
+
+nav.navbar.span3{
+    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-7-702-234.jpg");
+    opacity: 0.6;
+}
+
+nav.navbar.span3:hover{
+    opacity: 1;
+}
+
+.menu_item{
+    background-color:rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+}
+
+.menu_item_pmm{
+    font-size: 15px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    text-shadow: 0 0 0;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+
+}
+
