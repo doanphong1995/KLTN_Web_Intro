@@ -153,7 +153,7 @@ img{	width: 100%;}
 .navbar .nav .menu_item a{
     text-shadow: 0 0 0;
     text-transform: uppercase;
-    color: white;
+    color: black;
     font-weight: 600;
 	font-style:bold;
 
@@ -378,10 +378,10 @@ h2.sub_title span.little_title {
     -ms-animation: moveFromTop 300ms ease;
 }
 .home .box p{
-    color: #fff;
+    color: black;
 }
 .home .box:hover p{
-    color: #fff;
+    color: orange;
     -webkit-animation: moveFromBottom 500ms ease;
     -moz-animation: moveFromBottom 500ms ease;
     -ms-animation: moveFromBottom 500ms ease;
@@ -1678,74 +1678,81 @@ pmm_button{
 li.box.span2.offset0.color_one.resume {
     border-width: 2px 0px 2px 2px;
     border-style: solid;
-    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-468-234.jpg");
-    opacity: 0.6;
+    border-color: black;
+    background: url("https://uphinhnhanh.com/images/2017/06/08/1.jpg");
+  
 }
 
 li.box.span2.offset0.color_one.resume:hover{
-    opacity: 1;
+   background: rgba(0, 0, 0, 0.1);
 }
 
 li.box.span1.color_tree.profile.offset0 {
     border-width: 2px 2px 2px 2px;
     border-style: solid;
-    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-1.jpg");   
-    opacity: 0.6; 
+    background: url("https://uphinhnhanh.com/images/2017/06/08/2.jpg");   
+    border-color: black;
+  
 }
 
 li.box.span1.color_tree.profile.offset0:hover {
-    opacity: 1;
+   background: rgba(0, 0, 0, 0.1);
 }
 
 li.box.span1.offset0.color_two.experience{
     border-width: 0px 0px 0px 2px;
     border-style: solid;
-    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-2.jpg");  
-    opacity: 0.6;      
+    background: url("https://uphinhnhanh.com/images/2017/06/08/3.jpg");  
+    border-color: black;
+ 
 }
 
 li.box.span1.offset0.color_two.experience:hover{
-    opacity: 1;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 li.box.span1.offset0.color_seven.social{
     border-width: 2px 0px 2px 2px;
     border-style: solid;
-    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-5.jpg");   
-    opacity: 0.6;         
+    background: url("https://uphinhnhanh.com/images/2017/06/08/6.jpg");   
+    border-color: black;
+    
 }
 
 li.box.span1.offset0.color_seven.social:hover{
-    opacity: 1;
+   background: rgba(0, 0, 0, 0.1);
 }
 
 li.box.span1.color_four.education.offset0{
     border-width: 0px 0px 0px 2px;
     border-style: solid;
-    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-3.jpg"); 
-    opacity: 0.6;           
+    background: url("https://uphinhnhanh.com/images/2017/06/08/4.jpg"); 
+    border-color: black;
+      
 }
 
 li.box.span1.color_four.education.offset0:hover{
-    opacity: 1;
+   background: rgba(0, 0, 0, 0.1); 
 }
 
 li.box.span1.color_one.blog.offset0{
     border-width: 0px 2px 0px 2px;
     border-style: solid;
-    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-4.jpg"); 
-    opacity: 0.6;           
+    background: url("https://uphinhnhanh.com/images/2017/06/08/5.jpg"); 
+    border-color: black;
+      
 }
 
 li.box.span1.color_one.blog.offset0:hover{
-    opacity: 1;
+   background: rgba(0, 0, 0, 0.1);
 }
 
 li.box.span1.color_six.contact.offset0{
     border-width: 2px 0px 2px 2px;
     border-style: solid;
-    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-6.jpg");   
-    opacity: 0.6;         
+    background: url("https://uphinhnhanh.com/images/2017/06/08/7.jpg");   
+    border-color: black;
+    
 }
 
 li.box.span1.color_six.contact.offset0:hover{
@@ -1755,38 +1762,32 @@ li.box.span1.color_six.contact.offset0:hover{
 li.box.span1.color_five.portfolio.offset0{
     border-width: 2px 2px 2px 2px;
     border-style: solid;
-    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-234-234-7.jpg");  
-    opacity: 0.6;          
+    background: url("https://uphinhnhanh.com/images/2017/06/08/8.jpg");  
+    border-color: black;
+     
 }
 
 li.box.span1.color_five.portfolio.offset0:hover{
-    opacity: 1;
+   background: rgba(0, 0, 0, 0.1);
 }
 
 .box.span2.offset0.color_one.resume{
-    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-7-468-234.jpg");
+    background: url("https://uphinhnhanh.com/images/2017/06/08/head1.jpg");
     border-width: 0px 2px 0px 0px;
     border-style: solid;
-    opacity: 0.6;
-}
-
-.box.span2.offset0.color_one.resume:hover{
-    opacity: 1;
+    border-color: black;
+  
 }
 
 nav.navbar.span3{
-    background: url("http://sv1.upsieutoc.com/2017/06/06/hoa-sen-7-702-234.jpg");
-    opacity: 0.6;
-}
-
-nav.navbar.span3:hover{
-    opacity: 1;
+    background: url("https://uphinhnhanh.com/images/2017/06/08/head2.jpg");
+  
 }
 
 .menu_item{
-    background-color:rgba(0, 0, 0, 0.3);
     border-style: solid;
     border-width: 0px 2px 0px 0px;
+    border-color: black;    
 }
 
 .menu_item_pmm{
