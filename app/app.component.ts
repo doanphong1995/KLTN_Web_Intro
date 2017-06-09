@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoryService } from '../app/home2/product/category.service';
+
 declare var $: any;
 
 @Component({

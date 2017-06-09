@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MODULE_COMPONENT } from './app.routes';
+import { HttpModule } from '@angular/http';
 import { APP_BASE_HREF } from '@angular/common';
 import { AppComponent } from './app.component';
 import { HomeComponent } from '../app/home/home.component';
@@ -16,15 +17,18 @@ import { FlMeaningComponent } from '../app/home2/flmeaning/flmeaning.component';
 import { ProductDetailsComponent } from '../app/home2/productdetails/productdetails.component';
 import { HeaderComponent } from '../app/home2/header/header.component';
 import { FooterComponent } from '../app/home2/footer/footer.component';
+import { InfiniteScrollModule } from 'angular2-infinite-scroll';
+
+//import { CategoryService } from '../app/home2/product/category.service';
 
 @NgModule({
-  imports: [BrowserModule, MODULE_COMPONENT],
+  imports: [BrowserModule, MODULE_COMPONENT, HttpModule, InfiniteScrollModule],
   declarations: [AppComponent, HomeComponent, IntroduceComponent,
     HeaderComponent, FooterComponent, BlogComponent, ContactComponent,
     ProductComponent, ExperienceComponent, PartnerComponent, FanpageComponent,
     FlMeaningComponent, ProductDetailsComponent, BlogIDComponent],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
-  bootstrap:    [AppComponent]
+  bootstrap: [AppComponent]
 })
 
 export class AppModule { }

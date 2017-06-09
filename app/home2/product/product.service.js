@@ -17,36 +17,10 @@ var ProductService = (function () {
         this._http = _http;
         this.apiUrl = "http://localhost:8080/product/";
     }
-    ProductService.prototype.GetAllCategory = function () {
+    ProductService.prototype.GetAllProduct = function () {
         return this._http.get(this.apiUrl)
             .map(function (response) { return response.json(); });
         //.catch(this.handleError);
-    };
-    ProductService.prototype.GetCategoryById = function (data) {
-        return this._http.get(this.apiUrl + data, this.jwt())
-            .map(function (response) { return response.json(); });
-    };
-    ProductService.prototype.AddNewCategory = function (data) {
-        return this._http.post(this.apiUrl, data, this.jwt())
-            .map(function (response) { return response.json(); });
-    };
-    ProductService.prototype.UpdateCategory = function (id, data) {
-        return this._http.put(this.apiUrl + id, data, this.jwt())
-            .map(function (response) { return response.json(); });
-    };
-    ProductService.prototype.DeleteCategory = function (id) {
-        return this._http.delete(this.apiUrl + id, this.jwt())
-            .map(function (response) { return response.json(); });
-    };
-    ProductService.prototype.jwt = function () {
-        // create authorization header with jwt token
-        var currentUser = JSON.parse(localStorage.getItem('currentUser'));
-        if (currentUser && currentUser.token) {
-            var headers = new http_1.Headers({ 'Authorization': currentUser.token });
-            headers.append('Content-Type', 'application/json');
-            headers.append('Accept', 'application/json');
-            return new http_1.RequestOptions({ headers: headers });
-        }
     };
     return ProductService;
 }());
