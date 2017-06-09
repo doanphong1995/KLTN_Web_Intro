@@ -14,6 +14,7 @@ declare var $: any;
 
 export class ProductComponent implements OnInit {
 
+  sumProCate = 4;
   sum = 4;
   throttle = 0;
   scrollDistance = 0;
@@ -35,50 +36,62 @@ export class ProductComponent implements OnInit {
   LoadData() {
     this.categoryService.GetAllCategory().subscribe((response: any) => {
       this.listCate = response;
-      //console.log(this.listCate);
     });
   }
 
   LoadProduct() {
     this.productService.GetAllProduct().subscribe((response: any) => {
+      this.array = [];
       this.listProduct = response;
+      console.log(this.listProduct);
+      this.productIndex = 0;
+      this.sum = 4;
+      this.isAll = true;
       this.addItems(0, this.sum);
-      //console.log(this.listProduct);
     });
   }
 
   getProductCategory(id: String) {
-    console.log(id);
+
+    jQuery('#menu_content li').removeClass('active'); // remove active class from all filter links
+    jQuery('#' + id + '').addClass('active'); // add active class to clicked link
+
     this.isAll = false;
     if (id != "0") {
-      console.log("product category");
       this.productCategory.GetAllProductCategory(id).subscribe((response: any) => {
         this.listProductCate = response;
-        console.log("get product category");
-        console.log(this.listProductCate);
+        this.productIndex = 0;
+        this.array = [];
+
+        if (this.sum > this.listProductCate.length) {
+          this.sum = this.listProductCate.length;
+        }
+        else {
+          this.sum = this.sumProCate;
+        }
         this.addItems(0, this.sum);
-        console.log(this.listProductCate);
       });
     }
     else {
-      console.log("product")
       this.LoadProduct();
-      console.log("get product");
-      console.log(this.listProduct);
     }
   }
 
   addItems(startIndex: any, endIndex: any) {
+
     let i = this.productIndex;
-    for (; i < this.sum; ++i) {
-      this.productIndex++;
-      if (!this.isAll) {
+    if (!this.isAll) {
+      for (; i < this.sum; i++) {
+        this.productIndex++;
         this.array.push(this.listProductCate[i]);
         if (this.sum == this.listProductCate.length) {
           this.isFinish = true;
         }
       }
-      else {
+    }
+    else {
+      for (; i < this.sum; i++) {
+        this.productIndex++;
         this.array.push(this.listProduct[i]);
         if (this.sum == this.listProduct.length) {
           this.isFinish = true;
@@ -90,6 +103,8 @@ export class ProductComponent implements OnInit {
   onScrollDown() {
     console.log("scrool down!");
     const start = this.sum;
+    console.log("start");
+    console.log(start);
     this.sum += 4;
     if (this.isAll) {
       if (this.sum >= this.listProduct.length) {
@@ -99,11 +114,15 @@ export class ProductComponent implements OnInit {
     }
     else {
       if (this.sum >= this.listProductCate.length) {
-        this.sum = this.listProductCate.length
+        this.sum = this.listProductCate.length;
+
       }
       this.addItems(start, this.sum);
+      console.log("sum");
+      console.log(this.sum);
     }
   }
+
   ngOnInit() {
 
   }

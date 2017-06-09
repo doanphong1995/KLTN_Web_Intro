@@ -16,8 +16,8 @@
 
                             <!-------------filter portfolio---------------->
                             <ul id="menu_content" class="nav nav-pills">
-                                <li style="cursor:pointer" class="active" ><a class="all" (click)="getProductCategory(0)">All</a></li>
-                                <li style="cursor:pointer" *ngFor="let cate of listCate"><a class="all"  (click)="getProductCategory(cate.id)">{{cate.categoryName}}</a></li>
+                                <li style="cursor:pointer" class="active"><a class="all" (click)="getProductCategory(0)">All</a></li>
+                                <li style="cursor:pointer" *ngFor="let cate of listCate" id="{{cate.id}}"><a class="all"  (click)="getProductCategory(cate.id)">{{cate.categoryName}}</a></li>
                             </ul>
                             <!-------------end filter portfolio---------------->
                             <div class="search-results" infinite-scroll debounce [infiniteScrollDistance]="0" [infiniteScrollThrottle]="400" 

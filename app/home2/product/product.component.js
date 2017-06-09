@@ -17,6 +17,7 @@ var ProductComponent = (function () {
         this.categoryService = categoryService;
         this.productService = productService;
         this.productCategory = productCategory;
+        this.sumProCate = 4;
         this.sum = 4;
         this.throttle = 0;
         this.scrollDistance = 0;
@@ -32,49 +33,57 @@ var ProductComponent = (function () {
         var _this = this;
         this.categoryService.GetAllCategory().subscribe(function (response) {
             _this.listCate = response;
-            //console.log(this.listCate);
         });
     };
     ProductComponent.prototype.LoadProduct = function () {
         var _this = this;
         this.productService.GetAllProduct().subscribe(function (response) {
+            _this.array = [];
             _this.listProduct = response;
+            console.log(_this.listProduct);
+            _this.productIndex = 0;
+            _this.sum = 4;
+            _this.isAll = true;
             _this.addItems(0, _this.sum);
-            //console.log(this.listProduct);
         });
     };
     ProductComponent.prototype.getProductCategory = function (id) {
         var _this = this;
-        console.log(id);
+        jQuery('#menu_content li').removeClass('active'); // remove active class from all filter links
+        jQuery('#' + id + '').addClass('active'); // add active class to clicked link
         this.isAll = false;
         if (id != "0") {
-            console.log("product category");
             this.productCategory.GetAllProductCategory(id).subscribe(function (response) {
                 _this.listProductCate = response;
-                console.log("get product category");
-                console.log(_this.listProductCate);
+                _this.productIndex = 0;
+                _this.array = [];
+                if (_this.sum > _this.listProductCate.length) {
+                    _this.sum = _this.listProductCate.length;
+                }
+                else {
+                    _this.sum = _this.sumProCate;
+                }
                 _this.addItems(0, _this.sum);
-                console.log(_this.listProductCate);
             });
         }
         else {
-            console.log("product");
             this.LoadProduct();
-            console.log("get product");
-            console.log(this.listProduct);
         }
     };
     ProductComponent.prototype.addItems = function (startIndex, endIndex) {
         var i = this.productIndex;
-        for (; i < this.sum; ++i) {
-            this.productIndex++;
-            if (!this.isAll) {
+        if (!this.isAll) {
+            for (; i < this.sum; i++) {
+                this.productIndex++;
                 this.array.push(this.listProductCate[i]);
                 if (this.sum == this.listProductCate.length) {
                     this.isFinish = true;
                 }
             }
-            else {
+        }
+        else {
+            for (; i < this.sum; i++) {
+                this.productIndex++;
                 this.array.push(this.listProduct[i]);
                 if (this.sum == this.listProduct.length) {
                     this.isFinish = true;
@@ -85,6 +94,8 @@ var ProductComponent = (function () {
     ProductComponent.prototype.onScrollDown = function () {
         console.log("scrool down!");
         var start = this.sum;
+        console.log("start");
+        console.log(start);
         this.sum += 4;
         if (this.isAll) {
             if (this.sum >= this.listProduct.length) {
@@ -97,6 +108,8 @@ var ProductComponent = (function () {
                 this.sum = this.listProductCate.length;
             }
             this.addItems(start, this.sum);
+            console.log("sum");
+            console.log(this.sum);
         }
     };
     ProductComponent.prototype.ngOnInit = function () {
