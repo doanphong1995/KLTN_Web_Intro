@@ -15,14 +15,13 @@ const MODULE_ROUTES: Route[] = [
     { path: 'home', component: HomeComponent },
     { path: 'introduce', component: IntroduceComponent },
     { path: 'blog', component: BlogComponent },
-    { path: 'blogid', component: BlogIDComponent },
+    { path: 'blog/view/:id', component: BlogIDComponent },    
     { path: 'contact', component: ContactComponent },
-    { path: 'product', component: ProductComponent },
+    { path: 'product', component: ProductComponent,},
+    { path: 'product/view/:id', component: ProductDetailsComponent },
     { path: 'flmeaning', component: ExperienceComponent },
+    { path: 'flmeaning/view/:id', component: FlMeaningComponent },
     { path: 'partner', component: PartnerComponent },
-    { path: 'fanpage', component: FanpageComponent },
-    { path: 'flmeaningid', component: FlMeaningComponent },
-    { path: 'productid', component: ProductDetailsComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full' }
 ]
 

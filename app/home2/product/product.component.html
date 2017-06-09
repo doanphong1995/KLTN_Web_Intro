@@ -26,43 +26,13 @@
                                     <!--Item with no lightbox, only link to the item page-->
                                     <li class="case" *ngFor="let product of array">
                                         <!-- Button to trigger modal -->
-                                        <a class="portfolio_box " href="#myModal2" role="button" data-toggle="modal">
+                                        <a class="portfolio_box" [routerLink]="['view', product.id]" role="button" data-toggle="modal">
                                             <img src="{{product.productPictureUrl}}" alt="portfolio single item image">
                                             <div class="portfolio_box_text">
                                                 <h6>{{product.productName}}</h6>
                                                 <p> Price: contact</p>
                                             </div>
                                         </a>
-                                        <!-- Lightbox modal -->
-                                        <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                            <div class="modal-body">
-                                                <button style="color:black" type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cancel-circle"></i></button>
-                                                <div class="content_modal">
-                                                    <img src="../../app/assets/img/pmm/1.jpg" alt="image">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cancel-circle"></i></button>
-                                                    <div class="cotent_model_pmm">
-                                                        <div class="pmm_text">
-                                                            <p><b>Name:</b> <i>LET ME LOVE YOU</i></p>
-                                                            <p><b>Price:</b> <i>contact with us</i></p>
-                                                            <p><b>Unit:</b> <i>bouquet</i></p>
-                                                            <p><b>Quatity in stock:</b> <i>Stocking</i></p>
-                                                        </div>
-
-                                                    </div>
-                                                    <button class="pmm_button">CONTACT</button>
-
-                                                    <div class="modal-footer">
-                                                        <p>The simple things Item code: 3558 Old price: $0,00 New price: $16,28
-                                                            BUY NOW BIRTHDAY FLOWERS - THE SIMPLE THINGS The simplicity and
-                                                            sweetness of pink roses, blended with lisianthus and gerbera,
-                                                            make a beautiful flower basket. Let "The simple things" send
-                                                            to the person that you love the message "The love that I give
-                                                            you is simple but deeply"</p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
                                     </li>
                                 </ul>
                             </div>

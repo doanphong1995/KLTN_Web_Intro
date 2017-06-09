@@ -1801,3 +1801,17 @@ nav.navbar.span3{
 
 }
 
+.short-description {
+    margin-top: -35%;
+    float: right;
+    margin-left: 37%;
+    background: url(https://muahoaonline.com/skin/frontend/dalat_v2/default/images/title-block.png) repeat-x scroll center bottom;
+}
+
+.text_post {
+    margin-top: 3%;
+}
+
+.text_post p{
+    color: black;
+}

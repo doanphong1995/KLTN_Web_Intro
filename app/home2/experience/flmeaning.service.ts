@@ -5,19 +5,19 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
 @Injectable()
-export class ProductService {
-    private apiUrl = "http://localhost:8080/product/";
+export class FlowerMeaningService {
+    private apiUrl = "http://localhost:8080/meaning/";
 
     constructor(private _http: Http) {
 
     }
-    GetAllProduct(): Observable<any[]> {
+    GetAllFlMeaning(): Observable<any[]> {
         return this._http.get(this.apiUrl)
             .map((response) => response.json());
         //.catch(this.handleError);
     }
 
-    GetDetailProduct(id: string): Observable<any[]> {
+    GetDetailMeaning(id: string): Observable<any[]> {
         return this._http.get(this.apiUrl + id)
             .map((response) => response.json());
         //.catch(this.handleError);

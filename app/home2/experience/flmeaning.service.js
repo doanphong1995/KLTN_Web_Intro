@@ -12,26 +12,26 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/catch");
-var ProductService = (function () {
-    function ProductService(_http) {
+var FlowerMeaningService = (function () {
+    function FlowerMeaningService(_http) {
         this._http = _http;
-        this.apiUrl = "http://localhost:8080/product/";
+        this.apiUrl = "http://localhost:8080/meaning/";
     }
-    ProductService.prototype.GetAllProduct = function () {
+    FlowerMeaningService.prototype.GetAllFlMeaning = function () {
         return this._http.get(this.apiUrl)
             .map(function (response) { return response.json(); });
         //.catch(this.handleError);
     };
-    ProductService.prototype.GetDetailProduct = function (id) {
+    FlowerMeaningService.prototype.GetDetailMeaning = function (id) {
         return this._http.get(this.apiUrl + id)
             .map(function (response) { return response.json(); });
         //.catch(this.handleError);
     };
-    return ProductService;
+    return FlowerMeaningService;
 }());
-ProductService = __decorate([
+FlowerMeaningService = __decorate([
     core_1.Injectable(),
     __metadata("design:paramtypes", [http_1.Http])
-], ProductService);
-exports.ProductService = ProductService;
-//# sourceMappingURL=product.service.js.map
+], FlowerMeaningService);
+exports.FlowerMeaningService = FlowerMeaningService;
+//# sourceMappingURL=flmeaning.service.js.map

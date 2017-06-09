@@ -10,40 +10,17 @@
 
                         <div class="content_center alignleft ">
 
-                            <div class="content_post first">
+                            <div class="content_post first" *ngFor="let blog of listBlog">
                                 <h2 class="sub_title">Blog </h2>
                                 <div class="clearfix"></div>
                                 <div id="myCarousel" class="carousel slide">
-                                    <h1 style="color:black">INSTRUCTIONS FOR FLOWERS</h1>
+                                    <h1 style="color:black">{{blog.title}}</h1>
                                     <!-- Carousel items -->
                                     <div class="active item"><img src="../../app/assets/img/flmeaning/1.jpg" alt="//"></div>
                                     <!-- Carousel nav -->
 
                                 </div>
-                                <div class="text_post">
-                                    <p><span style="color:#000000">Mỗi m&agrave;u sắc hoa hồng lại mang đến một &yacute; nghĩa biểu đạt kh&aacute;c nhau, v&igrave; vậy bạn h&atilde;y c&ugrave;ng BomShop t&igrave;m hiểu xem b&oacute; hoa m&igrave;nh tặng mang th&ocirc;ng điệp g&igrave; nh&eacute;:</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng đỏ</strong>: tượng trưng cho một t&igrave;nh y&ecirc;u nồng ch&aacute;y v&agrave; l&atilde;ng mạn. Hoa hồng đỏ đ&atilde; c&oacute; từ rất l&acirc;u đời, trải qua nhiều nền văn h&oacute;a - cả phương t&acirc;y v&agrave; phương đ&ocirc;ng.Nhưng ở bất k&igrave; đ&acirc;u, n&oacute; cũng lu&ocirc;n l&agrave; lo&agrave;i hoa được y&ecirc;u th&iacute;ch nhất, v&agrave; biểu tượng cho một thứ t&igrave;nh cảm v&ocirc; c&ugrave;ng thi&ecirc;ng li&ecirc;ng: T&igrave;nh y&ecirc;u.</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng trắng</strong>: tượng trưng cho sự ng&acirc;y thơ, duy&ecirc;n d&aacute;ng v&agrave; sự cảm th&ocirc;ng. Hồng trắng kh&ocirc;ng chỉ biểu tượng cho một t&igrave;nh y&ecirc;u thuần khiết, cao thượng m&agrave; mặt kh&aacute;c, n&oacute; c&ograve;n l&agrave; lo&agrave;i hoa d&agrave;nh để b&agrave;y tỏ lời xin lỗi đến người y&ecirc;u nếu chẳng may bạn c&oacute; mắc lỗi lầm.</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng v&agrave;ng</strong>: C&oacute; lẽ đ&acirc;y l&agrave; lo&agrave;i hoa l&agrave;m người nhận kh&aacute; đau đầu bởi &yacute; nghĩa kh&aacute; đa dạng của n&oacute;: Hoa hồng v&agrave;ng kh&ocirc;ng chỉ tượng trưng cho một t&igrave;nh y&ecirc;u ki&ecirc;u sa đầy rực rỡ, m&agrave; n&oacute; c&ograve;n l&agrave; lo&agrave;i hoa của t&igrave;nh bạn, thể hiện sự quan t&acirc;m v&agrave; tiến triển trong mối quan hệ, chẳng hạn như: &quot;anh quan t&acirc;m đến em&quot; hoặc &quot;h&atilde;y nhớ đến anh&quot;. Tặng một b&oacute; hồng v&agrave;ng c&oacute; thể l&agrave; mừng ng&agrave;y khởi đầu, v&agrave; cả mừng ng&agrave;y trở về. Đ&ocirc;i khi,hồng v&agrave;ng lại l&agrave; một lời b&agrave;y tỏ sự ghen tu&ocirc;ng, t&igrave;nh y&ecirc;u giảm s&uacute;t, v&agrave; sự phản bội. B&ecirc;n cạnh đ&oacute;, hoa hồng v&agrave;ng cũng l&agrave; lo&agrave;i hoa l&yacute; tưởng để d&agrave;nh tặng mẹ v&agrave; b&agrave;, bởi lẽ n&oacute; c&ograve;n c&oacute; &yacute; nghĩa của sự biết ơn v&agrave; t&ocirc;n k&iacute;nh.</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng phớt</strong>: M&agrave;u hồng phớt nhẹ nh&agrave;ng của hoa hồng ngụ &yacute; về sự bắt đầu của một t&igrave;nh y&ecirc;u đầy mơ mộng, l&atilde;ng mạn v&agrave; dịu d&agrave;ng. B&ecirc;n cạnh đ&oacute;, n&oacute; c&ograve;n thể hiện một hạnh ph&uacute;c tr&ograve;n đầy với lời nhắn nhủ: &quot;H&atilde;y tin anh nh&eacute;! &quot;</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng đậm</strong>: hoa hồng m&agrave;u hồng đậm mang &yacute; nghĩa của sự sang trọng, sự biết ơn v&agrave; để b&agrave;y tỏ lời cảm ơn. Ngo&agrave;i ra, hồng đậm c&ograve;n ngụ &yacute; về một người đẹp ki&ecirc;u k&igrave;.</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng phấn</strong>: M&agrave;u hồng phấn dịu nhẹ của hoa mang đến th&ocirc;ng điệp về sự tr&igrave;u mến, về một t&igrave;nh y&ecirc;u l&atilde;ng mạn v&agrave; nhẹ nh&agrave;ng.</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng nhung</strong>: tượng trưng cho một t&igrave;nh y&ecirc;u say đắm v&agrave; nồng nhiệt.</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng cam</strong>: Thể hiện sự nhiệt t&igrave;nh v&agrave; đam m&ecirc; ch&aacute;y bỏng. M&agrave;u cam đầy rực rỡ thể hiện một t&igrave;nh y&ecirc;u nồng nhiệt nhưng cũng h&ograve;a lẫn với sự ghen tu&ocirc;ng. Hay một &yacute; nghĩa kh&aacute;c, n&oacute; l&agrave; cầu nối giữa t&igrave;nh bạn v&agrave; t&igrave;nh y&ecirc;u (bởi sự h&ograve;a trộn giữa v&agrave;ng v&agrave; đỏ) v&agrave; ngụ &yacute; rằng &quot;t&ocirc;i tự h&agrave;o về bạn&quot;.</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng t&iacute;m</strong>: B&ecirc;n cạnh sự sang trọng vốn c&oacute;, hoa hồng t&iacute;m c&ograve;n thể hiện l&ograve;ng say m&ecirc;, chung thủy, v&agrave; l&agrave; t&igrave;nh y&ecirc;u m&atilde;nh liệt ngay từ c&aacute;i nh&igrave;n đầu ti&ecirc;n.</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng xanh</strong>: tượng trưng cho một t&igrave;nh y&ecirc;u bất diệt.</span></p>
-
-                                    <p><span style="color:#000000"><strong>Hoa hồng tỉ muội</strong>: Đ&uacute;ng như c&aacute;i t&ecirc;n của hoa, hồng tỉ muội tượng trưng cho t&igrave;nh chị em thắm thiết. Cho t&igrave;nh cảm gia đ&igrave;nh. B&agrave;y tỏ sự biết ơn, y&ecirc;u thương tr&igrave;u mến. V&agrave; nếu người được tặng l&agrave; một ch&agrave;ng trai, th&ocirc;ng điệp được trao gửi ở đ&acirc;y ch&iacute;nh l&agrave;: Bạn l&agrave; một đứa em ngoan.</span></p>
+                                <div class="text_post" [innerHTML]="blog.content">
 
                                 </div>
                             </div>
@@ -57,49 +34,9 @@
                                 <div class="tab-content ">
                                     <div class="tab-pane active " id="popular ">
                                         <ul>
-                                            <li class="console first ">
-                                                <div class="content_img "><img src="../../app/assets/img/flmeaning/meaning1.jpg
-                                    " alt="// " /></div>
-                                                <p><a class="video-link " href="# ">Video used as media for blog article</a></p>
-                                            </li>
-                                            <li class="console ">
-                                                <div class="content_img "><img src="../../app/assets/img/flmeaning/meaning2.jpg
-                                    " alt="// " /></div>
-                                                <p><a class="video-link " href="# ">Video used as media for blog article</a></p>
-                                            </li>
-                                            <li class="console ">
-                                                <div class="content_img "><img src="../../app/assets/img/flmeaning/meaning2.jpg
-                                    " alt="// " /></div>
-                                                <p><a class="video-link " href="# ">Video used as media for blog article</a></p>
-                                            </li>
-                                            <li class="console last ">
-                                                <div class="content_img "><img src="../../app/assets/img/flmeaning/meaning2.jpg
-                                    " alt="// " /></div>
-                                                <p><a class="video-link " href="# ">Video used as media for blog article</a></p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="tab-pane " id="recent ">
-                                        <ul>
-                                            <li class="console first ">
-                                                <div class="content_img "><img src="../../app/assets/img/flmeaning/meaning2.jpg
-                                    " alt="// " /></div>
-                                                <p><a class="video-link " href="# ">Video used as media for blog article</a></p>
-                                            </li>
-                                            <li class="console ">
-                                                <div class="content_img "><img src="../../app/assets/img/blog/thumbnail-2.jpg
-                                    " alt="// " /></div>
-                                                <p><a class="video-link " href="# ">Video used as media for blog article</a></p>
-                                            </li>
-                                            <li class="console ">
-                                                <div class="content_img "><img src="../../app/assets/img/blog/thumbnail-3.jpg
-                                    " alt="// " /></div>
-                                                <p><a class="video-link " href="# ">Video used as media for blog article</a></p>
-                                            </li>
-                                            <li class="console last ">
-                                                <div class="content_img "><img src="../../app/assets/img/blog/thumbnail-4.jpg
-                                    " alt="// " /></div>
-                                                <p><a class="video-link " href="# ">Video used as media for blog article</a></p>
+                                            <li class="console" *ngFor="let random of listRandomBlog">
+                                                <div class="content_img "><img src="../../app/assets/img/flmeaning/meaning2.jpg" /></div>
+                                                <p><a class="video-link " href="# ">{{random.title}}</a></p>
                                             </li>
                                         </ul>
                                     </div>

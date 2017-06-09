@@ -12,26 +12,26 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/catch");
-var ProductService = (function () {
-    function ProductService(_http) {
+var BlogService = (function () {
+    function BlogService(_http) {
         this._http = _http;
-        this.apiUrl = "http://localhost:8080/product/";
+        this.apiUrl = "http://localhost:8080/blog/";
     }
-    ProductService.prototype.GetAllProduct = function () {
+    BlogService.prototype.GetAllBlog = function () {
         return this._http.get(this.apiUrl)
             .map(function (response) { return response.json(); });
         //.catch(this.handleError);
     };
-    ProductService.prototype.GetDetailProduct = function (id) {
+    BlogService.prototype.GetDetailBlog = function (id) {
         return this._http.get(this.apiUrl + id)
             .map(function (response) { return response.json(); });
         //.catch(this.handleError);
     };
-    return ProductService;
+    return BlogService;
 }());
-ProductService = __decorate([
+BlogService = __decorate([
     core_1.Injectable(),
     __metadata("design:paramtypes", [http_1.Http])
-], ProductService);
-exports.ProductService = ProductService;
-//# sourceMappingURL=product.service.js.map
+], BlogService);
+exports.BlogService = BlogService;
+//# sourceMappingURL=blog.service.js.map

@@ -5,20 +5,14 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
 @Injectable()
-export class ProductService {
-    private apiUrl = "http://localhost:8080/product/";
+export class GetRandomProductService {
+    private apiUrl = "http://localhost:8080/product/random/4";
 
     constructor(private _http: Http) {
 
     }
-    GetAllProduct(): Observable<any[]> {
+    GetRamdomProduct(): Observable<any[]> {
         return this._http.get(this.apiUrl)
-            .map((response) => response.json());
-        //.catch(this.handleError);
-    }
-
-    GetDetailProduct(id: string): Observable<any[]> {
-        return this._http.get(this.apiUrl + id)
             .map((response) => response.json());
         //.catch(this.handleError);
     }

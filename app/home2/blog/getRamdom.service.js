@@ -12,26 +12,21 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/catch");
-var ProductService = (function () {
-    function ProductService(_http) {
+var GetRandomBlogService = (function () {
+    function GetRandomBlogService(_http) {
         this._http = _http;
-        this.apiUrl = "http://localhost:8080/product/";
+        this.apiUrl = "http://localhost:8080/blog/ramdom/4";
     }
-    ProductService.prototype.GetAllProduct = function () {
+    GetRandomBlogService.prototype.GetRamdomBlog = function () {
         return this._http.get(this.apiUrl)
             .map(function (response) { return response.json(); });
         //.catch(this.handleError);
     };
-    ProductService.prototype.GetDetailProduct = function (id) {
-        return this._http.get(this.apiUrl + id)
-            .map(function (response) { return response.json(); });
-        //.catch(this.handleError);
-    };
-    return ProductService;
+    return GetRandomBlogService;
 }());
-ProductService = __decorate([
+GetRandomBlogService = __decorate([
     core_1.Injectable(),
     __metadata("design:paramtypes", [http_1.Http])
-], ProductService);
-exports.ProductService = ProductService;
-//# sourceMappingURL=product.service.js.map
+], GetRandomBlogService);
+exports.GetRandomBlogService = GetRandomBlogService;
+//# sourceMappingURL=getRamdom.service.js.map
